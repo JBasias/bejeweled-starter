@@ -23,18 +23,31 @@ class Cursor {
   }
 
   up() {
+
+    this.resetBackgroundColor();
+    if(this.row>0) this.row--;
+    this.setBackgroundColor();
     // Move cursor up
   }
 
   down() {
+    this.resetBackgroundColor();
+    if(this.row<7) this.row++;
+    this.setBackgroundColor();
     // Move cursor down
   }
 
   left() {
+    this.resetBackgroundColor();
+    if(this.col >0) this.col--;
+    this.setBackgroundColor();
     // Move cursor left
   }
 
   right() {
+    this.resetBackgroundColor();
+    if(this.col < 7) this.col++;
+    this.setBackgroundColor();
     // Move cursor right
   }
 

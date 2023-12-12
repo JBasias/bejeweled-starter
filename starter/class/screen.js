@@ -1,5 +1,6 @@
 const keypress = require('keypress');
 const Command = require('./command');
+var emoji = require('emoji');
 
 class Screen {
 
